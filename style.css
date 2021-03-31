@@ -30,14 +30,27 @@ body {
     align-items: center;
     justify-content: center;
     height: 100vh;
+    min-height: 600px;
     width: 100%;
 }
 
 .conA h1 {
-    font-size: 4rem;
+    font-size: 20vw;
     -ms-writing-mode: tb-rl; /* 縦書き */
     writing-mode: vertical-rl; /* 縦書き */
     text-orientation: upright; /* 和文、英数字を縦書きに */
+}
+
+@media (max-width: 319px) {
+    .conA h1 {
+        font-size: 64px;
+    }
+}
+
+@media (min-width: 600px) {
+    .conA h1 {
+        font-size: 120px;
+    }
 }
 
 .conB {
