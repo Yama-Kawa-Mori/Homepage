@@ -36,6 +36,7 @@ body {
 
 .conA h1 {
     font-size: 20vw;
+    white-space: nowrap;
     -ms-writing-mode: tb-rl; /* 縦書き */
     writing-mode: vertical-rl; /* 縦書き */
     text-orientation: upright; /* 和文、英数字を縦書きに */
@@ -54,13 +55,15 @@ body {
 }
 
 .conB {
+    margin-top: 30vh;
     margin-bottom: 30vh;
     height: 30vh;
     width: 100%;
 }
 
 .conB p {
-    margin-bottom: 15vh;
+    padding-top: 30px;
+    padding-bottom: 30px;
     font-size: 1rem;
     text-align: center;
     letter-spacing: 0.4em;
