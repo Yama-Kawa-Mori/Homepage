@@ -1,0 +1,38 @@
+body {
+    margin: 0;
+    background-image: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url(./img/wakimizu.jpg);
+    background-position: center;
+    background-size: cover;
+    color: white;
+    font-family: 'New Tegomin', serif;
+}
+
+.conA {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100%;
+}
+
+.conA h1 {
+    font-size: 12vh;
+    -ms-writing-mode: tb-rl; /* 縦書き */
+    writing-mode: vertical-rl; /* 縦書き */
+    text-orientation: upright; /* 和文、英数字を縦書きに */
+}
+
+.conB {
+    margin-bottom: 30vh;
+    height: 30vh;
+    width: 100%;
+}
+
+.conB p {
+    margin-bottom: 15vh;
+    font-size: 3vh;
+    text-align: center;
+    letter-spacing: 20px;
+    margin-left: 20px;
+    margin-right: 0px;
+}
