@@ -25,16 +25,16 @@ body {
     font-family: 'New Tegomin', serif;
 }
 
-.conA {
+.content {
     display: flex;
     align-items: center;
     justify-content: center;
     height: 100vh;
-    min-height: 600px;
+    min-height: 700px;
     width: 100%;
 }
 
-.conA h1 {
+#conA h1 {
     font-size: 20vw;
     white-space: nowrap;
     -ms-writing-mode: tb-rl; /* 縦書き */
@@ -43,25 +43,18 @@ body {
 }
 
 @media (max-width: 319px) {
-    .conA h1 {
+    #conA h1 {
         font-size: 64px;
     }
 }
 
 @media (min-width: 600px) {
-    .conA h1 {
+    #conA h1 {
         font-size: 120px;
     }
 }
 
-.conB {
-    margin-top: 30vh;
-    margin-bottom: 30vh;
-    height: 30vh;
-    width: 100%;
-}
-
-.conB p {
+#conB p {
     padding-top: 30px;
     padding-bottom: 30px;
     font-size: 1rem;
