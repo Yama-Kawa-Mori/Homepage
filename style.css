@@ -1,21 +1,3 @@
-@media (max-width: 599px) {
-    :root {
-        font-size: 20px;
-    }
-}
-
-@media (min-width: 600px) and (max-width: 1024px) {
-    :root {
-        font-size: 24px;
-    }
-}
-
-@media (min-width: 1025px) {
-    :root {
-        font-size: 28px;
-    }
-}
-
 body {
     margin: 0;
     background-image: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url(./img/wakimizu.jpg);
@@ -30,25 +12,31 @@ body {
     align-items: center;
     justify-content: center;
     height: 100vh;
-    min-height: 700px;
+    min-height: 568px;
     width: 100%;
 }
 
+@media (max-height: 428px) { /* 横向きのスマホの場合 */
+    .content:first-child {
+        margin-top: 100px;
+    }
+}
+
 #conA h1 {
-    font-size: 20vw;
+    font-size: 20vw; /* 400px～600px(おおよそスマホサイズ)の間においてのみ発動 */
     white-space: nowrap;
     -ms-writing-mode: tb-rl; /* 縦書き */
     writing-mode: vertical-rl; /* 縦書き */
     text-orientation: upright; /* 和文、英数字を縦書きに */
 }
 
-@media (max-width: 319px) {
+@media (max-width: 400px) { /* 見出しフォントサイズの下限値:80px */
     #conA h1 {
-        font-size: 64px;
+        font-size: 80px;
     }
 }
 
-@media (min-width: 600px) {
+@media (min-width: 600px) { /* 見出しフォントサイズの上限値:120px */
     #conA h1 {
         font-size: 120px;
     }
@@ -57,9 +45,21 @@ body {
 #conB p {
     padding-top: 30px;
     padding-bottom: 30px;
-    font-size: 1rem;
+    font-size: 28px; /* 横向きのスマホ、縦向きのタブレットの場合 */
     text-align: center;
     letter-spacing: 0.4em;
     margin-left: 0.4em;
     margin-right: 0px;
+}
+
+@media (max-width: 767px) { /* 縦向きのスマホの場合 */
+    #conB p {
+        font-size: 26px;
+    }
+}
+
+@media (min-width: 1025px) { /* 横向きのタブレット以上の場合 */
+    #conB p {
+        font-size: 30px;
+    }
 }
